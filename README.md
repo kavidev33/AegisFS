@@ -1,12 +1,13 @@
 # AegisFS — GitHub Pages startup showcase
 
-A responsive, four-page, static website for AegisFS and the independent File Manager story. No packages, external fonts, build tools, analytics, or backend are needed.
+A responsive, five-page, static website for AegisFS and the independent File Manager story. No packages, external fonts, build tools, analytics, or backend are needed.
 
 ## Pages
 - `index.html` — home and startup introduction
 - `file-manager.html` — origin story and separate product track
 - `architecture.html` — deep broker-centered security architecture
 - `progress.html` — reported simulated evidence, limitations, next milestones, and resource needs
+- `contact.html` — provider-independent visible email + copy function; optional mailto button
 
 ## Deploying to GitHub Pages
 1. **Back up your existing website files** before replacing anything.
@@ -30,3 +31,15 @@ Edit HTML content directly and site-wide styling in `assets/styles.css`. All lin
 ## GitHub documentation
 - [Custom domain settings](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 - [HTTPS security](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https)
+
+## Contact setup
+The buttons now open `contact.html`, not an Outlook-specific page. The page shows `contact@drkavinet.tech` and a Copy Email button (with manual-copy fallback). The optional Open Email Application link uses `mailto:`; the visitor’s browser/OS decides which mail provider handles it. **GitHub Pages cannot provide an inbox or receive email.** Ensure the address exists and that domain MX/DNS mail routing has been configured with an email provider, and send a test from another email account before publishing for startup applications.
+
+
+## Contact v2 (topic-first layout)
+
+The contact page now has inquiry topics, a direct email copy button, and a Web3Forms-ready AJAX form.
+
+**IMPORTANT:** Submission is deliberately disabled until setup. Register at https://web3forms.com/ with your Zoho inbox, verify ownership, and replace `REPLACE_WITH_WEB3FORMS_ACCESS_KEY` in `contact.html` with the public access key. This key is meant to be embedded in static HTML; do not put passwords, Zoho login credentials or API secrets in this site. Test a real submission and check your Zoho inbox/spam folder before announcing the form. Consider the provider's anti-spam/domain settings and privacy terms before launch.
+
+Until configured, the button is visibly disabled and the contact email copy fallback works. LinkedIn and F6S URLs have **not** been invented; add them when ready.

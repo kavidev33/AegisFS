@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact & collaboration | AegisFS</title><meta name="description" content="From a practical File Manager to AegisFS: independent Rust and Windows filesystem security engineering, broker architecture research and an honest development roadmap."><meta name="theme-color" content="#090e18"><meta name="color-scheme" content="dark">
+<meta property="og:type" content="website"><meta property="og:title" content="Independent Windows filesystem security research | AegisFS"><meta property="og:description" content="From a practical File Manager to AegisFS: independent Rust and Windows filesystem security engineering, broker architecture research and an honest development roadmap."><meta property="og:url" content="https://drkavinet.tech/"><meta property="og:site_name" content="AegisFS">
+<link rel="canonical" href="https://drkavinet.tech/contact.html"><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><script src="assets/site.js" defer></script></head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container header-inner">
+  <a class="brand" href="index.html" aria-label="AegisFS home"><span class="brand-mark"><svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span><span>Aegis<span class="brand-accent">FS</span></span><span class="brand-dot"></span></a>
+  <nav class="desktop-nav" aria-label="Primary navigation"><a href="index.html" class="nav-link ">Overview</a><a href="file-manager.html" class="nav-link " >File Manager</a><a href="architecture.html" class="nav-link " >Architecture</a><a href="progress.html" class="nav-link " >Progress</a></nav>
+  <a class="header-contact" href="contact.html">Get in touch <svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+  <button class="mobile-nav-button" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="Open menu"><svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div><nav class="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation" hidden><a href="index.html" class="nav-link ">Overview</a><a href="file-manager.html" class="nav-link " >File Manager</a><a href="architecture.html" class="nav-link " >Architecture</a><a href="progress.html" class="nav-link " >Progress</a><a class="nav-link" href="contact.html">Contact</a></nav></header><main id="main">
+<section class="page-hero contact-page-hero"><div class="container">
+  <div class="eyebrow"><span class="signal"></span> CONTACT / COLLABORATION</div>
+  <h1>Have questions? <span class="gradient-text">Let's connect.</span></h1>
+  <p class="hero-lead">Research collaboration, Windows filesystem security, startup partnerships or feedback on the File Manager? Choose a topic and send us a message.</p>
+  <div class="contact-layout">
+    <div class="contact-intro">
+      <div class="overline">HOW CAN WE HELP?</div>
+      <h2>Start a conversation.</h2>
+      <p>Select a topic below to focus your message. We welcome constructive feedback and collaboration at this research stage.</p>
+      <fieldset class="topic-choices" aria-label="Choose your inquiry topic">
+        <legend class="sr-only">Inquiry topic</legend>
+        <label class="topic-choice"><input type="radio" name="inquiry-topic" value="Security research and review" checked><span class="topic-num">01</span><span>Security research &amp; review</span><span aria-hidden="true">↗</span></label>
+        <label class="topic-choice"><input type="radio" name="inquiry-topic" value="Startup program or partnership"><span class="topic-num">02</span><span>Startup program / partnership</span><span aria-hidden="true">↗</span></label>
+        <label class="topic-choice"><input type="radio" name="inquiry-topic" value="Mentorship and technical support"><span class="topic-num">03</span><span>Mentorship &amp; technical support</span><span aria-hidden="true">↗</span></label>
+        <label class="topic-choice"><input type="radio" name="inquiry-topic" value="File Manager feedback"><span class="topic-num">04</span><span>File Manager feedback</span><span aria-hidden="true">↗</span></label>
+        <label class="topic-choice"><input type="radio" name="inquiry-topic" value="Other inquiry"><span class="topic-num">05</span><span>Something else</span><span aria-hidden="true">↗</span></label>
+      </fieldset>
+      <div class="direct-contact">
+        <div class="overline">PREFER EMAIL?</div>
+        <p id="project-email" class="contact-address">contact@drkavinet.tech</p>
+        <button type="button" class="contact-copy" id="copy-project-email">Copy email address <span aria-hidden="true">↗</span></button>
+        <p id="copy-status" class="contact-feedback" role="status" aria-live="polite">Use your preferred email service; no Outlook redirect required.</p>
+      </div>
+    </div>
+    <div class="contact-form-card">
+      <div class="form-topline"><span>MESSAGE THE PROJECT</span><span class="form-live-dot" aria-hidden="true"></span></div>
+      <h2>Tell us what<br>you have in mind.</h2>
+      <p>Fill in the details below. Once the form is connected, messages will be delivered to the AegisFS mailbox.</p>
+      <form id="aegis-contact-form" novalidate>
+        <input type="hidden" name="access_key" value="REPLACE_WITH_WEB3FORMS_ACCESS_KEY">
+        <input type="hidden" name="subject" value="AegisFS website inquiry">
+        <input type="hidden" name="from_name" value="AegisFS Website">
+        <input type="hidden" name="inquiry_type" id="form-inquiry-type" value="Security research and review">
+        <input type="checkbox" name="botcheck" tabindex="-1" class="form-honeypot" aria-hidden="true">
+        <label for="contact-name">Your name <span class="required">*</span></label>
+        <input id="contact-name" name="name" type="text" autocomplete="name" maxlength="100" placeholder="Jane Smith" required>
+        <label for="contact-email">Email address <span class="required">*</span></label>
+        <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="160" placeholder="jane@example.com" required>
+        <label for="contact-organization">Organization <span class="optional">optional</span></label>
+        <input id="contact-organization" name="organization" type="text" maxlength="140" placeholder="Company, university, or community">
+        <label for="contact-message">Your message <span class="required">*</span></label>
+        <textarea id="contact-message" name="message" rows="5" minlength="10" maxlength="4000" placeholder="Tell us about your question or proposal..." required></textarea>
+        <p id="form-setup-note" class="form-setup-note">Online message submission is being configured. Until then, please use the email copy option on the left.</p>
+        <button class="btn btn-primary form-submit" type="submit" disabled>Send your message <span aria-hidden="true">↗</span></button>
+        <p id="form-feedback" class="form-feedback" role="status" aria-live="polite"></p>
+        <p class="form-privacy">Messages will be processed by our selected form delivery provider. Please avoid sending confidential information or security credentials.</p>
+      </form>
+    </div>
+  </div>
+  <div class="contact-lower"><span>Independent research initiative · Windows / Rust security engineering</span><a href="https://github.com/kavidev33" target="_blank" rel="noopener noreferrer">Explore GitHub ↗</a></div>
+</div></section>
+</main><footer class="site-footer"><div class="container footer-upper"><div><div class="footer-brand"><svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg> AegisFS</div><p>Independent systems engineering. Building thoughtful Windows file experiences and researching trustworthy filesystem security.</p></div>
+    <div class="footer-links"><div><strong>Explore</strong><a href="file-manager.html">File Manager story</a><a href="architecture.html">Security architecture</a><a href="progress.html">Development status</a></div><div><strong>Connect</strong><a href="https://github.com/kavidev33" target="_blank" rel="noopener noreferrer">GitHub profile</a><a href="contact.html">Email the project</a></div></div></div>
+    <div class="container footer-bottom"><span>© <span id="year">2026</span> AegisFS. An independent R&amp;D initiative.</span><span>Research stage · No production security certification claimed.</span></div></footer></body></html>
