@@ -43,3 +43,20 @@ The contact page now has inquiry topics, a direct email copy button, and a Web3F
 **IMPORTANT:** Submission is deliberately disabled until setup. Register at https://web3forms.com/ with your Zoho inbox, verify ownership, and replace `REPLACE_WITH_WEB3FORMS_ACCESS_KEY` in `contact.html` with the public access key. This key is meant to be embedded in static HTML; do not put passwords, Zoho login credentials or API secrets in this site. Test a real submission and check your Zoho inbox/spam folder before announcing the form. Consider the provider's anti-spam/domain settings and privacy terms before launch.
 
 Until configured, the button is visibly disabled and the contact email copy fallback works. LinkedIn and F6S URLs have **not** been invented; add them when ready.
+
+## Contact update (November 2026)
+The visitor enters **their own** email address, chooses a topic, writes a message, and clicks **Send your message**. No copy-email button or mandatory mailto redirect. The project address is displayed only as a secondary fallback.
+
+`contact.html` includes the **public Web3Forms access key shown by the project owner**. This is a public client-side identifier, not a Zoho login credential. The site shows success **only if Web3Forms accepts the submission**; it does not claim the notification has reached Zoho. One submission has appeared in the Web3Forms dashboard, but notification delivery to Zoho still needs to be diagnosed and verified. Keep checking the Web3Forms Submissions page until confirmed.
+
+For deployment, upload this full folder over the old GitHub Pages site, preserving your DNS/CNAME settings. The original site remains untouched until you upload.
+
+## Social profiles in the existing footer Connect column
+The footer now displays three non-clickable placeholders pending the exact owner-provided URLs: AegisFS on F6S, Founder on F6S, Founder on LinkedIn. We deliberately did not invent URLs or ship broken links.
+
+To activate, replace each corresponding span in the five HTML files. Example:
+`<span class="profile-link-pending">AegisFS on F6S <small>Link pending</small></span>`
+becomes
+`<a href="https://YOUR-ACTUAL-F6S-URL" target="_blank" rel="noopener noreferrer">AegisFS on F6S ↗</a>`.
+
+If the currently live contact.html contains a manually added standalone `<section>` “Connect with AegisFS” after `</main>`, remove that section; this package already includes the social labels in the footer and no standalone section. Back up any newer live changes before replacing full files. Existing contact Web3Forms code remains unchanged.
