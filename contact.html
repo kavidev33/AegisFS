@@ -27,17 +27,16 @@
         <label class="topic-choice"><input type="radio" name="inquiry-topic" value="File Manager feedback"><span class="topic-num">04</span><span>File Manager feedback</span><span aria-hidden="true">↗</span></label>
         <label class="topic-choice"><input type="radio" name="inquiry-topic" value="Other inquiry"><span class="topic-num">05</span><span>Something else</span><span aria-hidden="true">↗</span></label>
       </fieldset>
-      <div class="direct-contact">
-        <div class="overline">PREFER EMAIL?</div>
-        <p id="project-email" class="contact-address">contact@drkavinet.tech</p>
-        <button type="button" class="contact-copy" id="copy-project-email">Copy email address <span aria-hidden="true">↗</span></button>
-        <p id="copy-status" class="contact-feedback" role="status" aria-live="polite">Use your preferred email service; no Outlook redirect required.</p>
+      <div class="contact-help-note">
+        <div class="overline">HOW IT WORKS</div>
+        <p><strong>No email app or copying required.</strong> Enter your own email address in the form. We use it only to reply to your inquiry.</p>
+        <p class="contact-secondary">For direct correspondence, our project address is <strong>contact@drkavinet.tech</strong>.</p>
       </div>
     </div>
     <div class="contact-form-card">
       <div class="form-topline"><span>MESSAGE THE PROJECT</span><span class="form-live-dot" aria-hidden="true"></span></div>
       <h2>Tell us what<br>you have in mind.</h2>
-      <p>Fill in the details below. Once the form is connected, messages will be delivered to the AegisFS mailbox.</p>
+      <p>Enter your email address so we can reply. Submit your inquiry directly here—no Outlook, Gmail, or copy-and-paste needed.</p>
       <form id="aegis-contact-form" novalidate>
         <input type="hidden" name="access_key" value="b4026219-2996-4d77-a252-c07667c9acc2">
         <input type="hidden" name="subject" value="AegisFS website inquiry">
@@ -46,21 +45,21 @@
         <input type="checkbox" name="botcheck" tabindex="-1" class="form-honeypot" aria-hidden="true">
         <label for="contact-name">Your name <span class="required">*</span></label>
         <input id="contact-name" name="name" type="text" autocomplete="name" maxlength="100" placeholder="Jane Smith" required>
-        <label for="contact-email">Email address <span class="required">*</span></label>
+        <label for="contact-email">Your email address <span class="required">*</span></label>
         <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="160" placeholder="jane@example.com" required>
         <label for="contact-organization">Organization <span class="optional">optional</span></label>
         <input id="contact-organization" name="organization" type="text" maxlength="140" placeholder="Company, university, or community">
         <label for="contact-message">Your message <span class="required">*</span></label>
         <textarea id="contact-message" name="message" rows="5" minlength="10" maxlength="4000" placeholder="Tell us about your question or proposal..." required></textarea>
-        <p id="form-setup-note" class="form-setup-note">Online message submission is being configured. Until then, please use the email copy option on the left.</p>
+        <p id="form-setup-note" class="form-setup-note" hidden>Online message submission is temporarily unavailable. You can contact us at contact@drkavinet.tech.</p>
         <button class="btn btn-primary form-submit" type="submit" disabled>Send your message <span aria-hidden="true">↗</span></button>
         <p id="form-feedback" class="form-feedback" role="status" aria-live="polite"></p>
-        <p class="form-privacy">Messages will be processed by our selected form delivery provider. Please avoid sending confidential information or security credentials.</p>
+        <p class="form-privacy">Your submission is handled by Web3Forms and is visible in our form dashboard. Email notification delivery is still being verified. Please avoid sharing passwords, security credentials, or confidential information.</p>
       </form>
     </div>
   </div>
   <div class="contact-lower"><span>Independent research initiative · Windows / Rust security engineering</span><a href="https://github.com/kavidev33" target="_blank" rel="noopener noreferrer">Explore GitHub ↗</a></div>
 </div></section>
 </main><footer class="site-footer"><div class="container footer-upper"><div><div class="footer-brand"><svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg> AegisFS</div><p>Independent systems engineering. Building thoughtful Windows file experiences and researching trustworthy filesystem security.</p></div>
-    <div class="footer-links"><div><strong>Explore</strong><a href="file-manager.html">File Manager story</a><a href="architecture.html">Security architecture</a><a href="progress.html">Development status</a></div><div><strong>Connect</strong><a href="https://github.com/kavidev33" target="_blank" rel="noopener noreferrer">GitHub profile</a><a href="contact.html">Email the project</a></div></div></div>
+    <div class="footer-links"><div><strong>Explore</strong><a href="file-manager.html">File Manager story</a><a href="architecture.html">Security architecture</a><a href="progress.html">Development status</a></div><div><strong>Connect</strong><a href="https://github.com/kavidev33" target="_blank" rel="noopener noreferrer">GitHub profile</a><a href="contact.html">Contact the project</a></div></div></div>
     <div class="container footer-bottom"><span>© <span id="year">2026</span> AegisFS. An independent R&amp;D initiative.</span><span>Research stage · No production security certification claimed.</span></div></footer></body></html>
