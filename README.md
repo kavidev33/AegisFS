@@ -60,3 +60,7 @@ becomes
 `<a href="https://YOUR-ACTUAL-F6S-URL" target="_blank" rel="noopener noreferrer">AegisFS on F6S ↗</a>`.
 
 If the currently live contact.html contains a manually added standalone `<section>` “Connect with AegisFS” after `</main>`, remove that section; this package already includes the social labels in the footer and no standalone section. Back up any newer live changes before replacing full files. Existing contact Web3Forms code remains unchanged.
+
+
+## Footer social buttons update
+The Connect footer column now contains clickable, outlined buttons for AegisFS F6S, Founder F6S and Founder LinkedIn. The links came from the owner-provided screenshot; verify them by opening each button after deployment. The Web3Forms contact page and access key were not changed.
