@@ -17,28 +17,6 @@
   if (year) year.textContent = String(new Date().getFullYear());
 })();
 
-(() => {
-  const btn = document.getElementById('copy-project-email');
-  const status = document.getElementById('copy-status');
-  if (!btn || !status) return;
-  btn.addEventListener('click', async () => {
-    const address = document.getElementById('project-email').textContent.trim();
-    try {
-      if (!navigator.clipboard?.writeText) throw new Error('Clipboard API unavailable');
-      await navigator.clipboard.writeText(address);
-      status.textContent = 'Email address copied. Paste it into your preferred email service.';
-      btn.textContent = 'Copied!';
-    } catch (_) {
-      status.textContent = 'Automatic copy was blocked by this browser. Select the visible email address above and copy it manually.';
-      const range = document.createRange();
-      range.selectNodeContents(document.getElementById('project-email'));
-      const sel = window.getSelection();
-      sel.removeAllRanges(); sel.addRange(range);
-    }
-  });
-})();
-
-
 // Topic selection and optional Web3Forms submission. No key means no network submission.
 (() => {
   const form = document.getElementById('aegis-contact-form');
@@ -54,7 +32,11 @@
     });
   });
   const configured = key && key.value.trim() !== '' && !key.value.includes('REPLACE_WITH_');
-  if (!configured) return;
+  if (!configured) {
+    submit.disabled = true;
+    note.hidden = false;
+    return;
+  }
   submit.disabled = false;
   note.hidden = true;
   form.addEventListener('submit', async (event) => {
@@ -70,13 +52,13 @@
       const json = await response.json();
       if (!response.ok || !json.success) throw new Error('Submission was not accepted');
       feedback.dataset.kind = 'success';
-      feedback.textContent = 'Thank you! Your message was submitted. We will get back to you via email.';
+      feedback.textContent = 'Message received by our form provider. Thank you! We will review your inquiry and reply to the email address you entered.';
       form.reset();
       const selected = document.querySelector('[name="inquiry-topic"]:checked');
       topicField.value = selected ? selected.value : 'Security research and review';
     } catch (error) {
       feedback.dataset.kind = 'error';
-      feedback.textContent = 'Message could not be sent. Please copy the email address and contact us directly.';
+      feedback.textContent = 'We could not submit your message. Please try again later or email contact@drkavinet.tech directly.';
     } finally {
       submit.disabled = false;
       submit.innerHTML = 'Send your message <span aria-hidden="true">↗</span>';

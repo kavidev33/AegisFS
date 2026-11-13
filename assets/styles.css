@@ -34,3 +34,20 @@
 #aegis-contact-form{display:flex;flex-direction:column;gap:9px}#aegis-contact-form label{font-size:.8rem;font-weight:680;color:#dce9f7;margin-top:10px}#aegis-contact-form input:not([type=hidden]):not([type=checkbox]),#aegis-contact-form textarea{display:block;width:100%;border:1px solid #385069;background:#0b1724;color:#edf6ff;border-radius:10px;padding:13px 15px;font:inherit;font-size:.9rem;outline:none;transition:border-color .2s;resize:vertical}#aegis-contact-form input:focus,#aegis-contact-form textarea:focus{border-color:#70caf7}.required{color:#87d7f0}.optional{font-size:.7rem;font-weight:450;color:#93a8bc}.form-honeypot{position:absolute;left:-10000px}.form-setup-note{font-size:.77rem;color:#e4c58d;background:#362d1d;padding:10px 13px;border:1px solid #70552c;border-radius:8px;margin:8px 0 0}.form-submit{width:100%;margin-top:9px;display:flex;justify-content:space-between;gap:12px}.form-submit:disabled{opacity:.48;cursor:not-allowed}.form-feedback{margin:0;font-size:.82rem;min-height:1.4em}.form-feedback[data-kind=error]{color:#ffb6b6}.form-feedback[data-kind=success]{color:#90e5b7}.form-privacy{font-size:.73rem;margin:4px 0 0;color:#8da3b8}.contact-lower{border-top:1px solid #253b50;display:flex;justify-content:space-between;gap:15px;margin-top:50px;padding-top:20px;font-size:.75rem;color:#91a9bf}.contact-lower a{color:#9ed9fb}
 @media(max-width:850px){.contact-layout{grid-template-columns:1fr;gap:20px}.contact-intro{padding-right:0}.contact-form-card{max-width:none}.contact-lower{flex-wrap:wrap}}
 @media(max-width:560px){.contact-layout{margin-top:30px}.topic-choice{padding:14px 11px}.contact-form-card{padding:22px}.contact-lower{margin-top:33px}}
+
+/* Contact flow: direct visitor submission; email is a low-emphasis fallback. */
+.contact-help-note{padding:26px 24px;margin-top:26px;border:1px solid #294963;border-radius:15px;background:rgba(16,38,57,.55)}
+.contact-help-note p{color:#bad0e4;font-size:.9rem;line-height:1.7;margin:12px 0 0}
+.contact-help-note strong{color:#eaf5ff}
+.contact-help-note .contact-secondary{font-size:.8rem;color:#91a9bf;overflow-wrap:anywhere}
+
+/* Links pending real profile URLs, kept inside the existing footer column. */
+.footer-links .profile-link-pending{font-size:.82rem;color:#8fa7bf;display:flex;gap:8px;flex-wrap:wrap;align-items:baseline}.profile-link-pending small{font-size:.67rem;color:#6b839c}
+
+/* Clickable, compact buttons for verified external profile links */
+.footer-social-buttons{display:flex;flex-direction:column;gap:9px;margin-top:7px;width:min(100%,245px)}
+.footer-links .footer-social-btn{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 13px;border:1px solid #355875;border-radius:9px;background:#142b41;color:#d8ecff;font-size:.79rem;font-weight:650;text-decoration:none;line-height:1.4;transition:background .18s,border-color .18s,transform .18s}
+.footer-links .footer-social-btn:hover{color:#fff;background:#1b405b;border-color:#73d6f0;transform:translateY(-1px)}
+.footer-links .footer-social-btn:focus-visible{outline:2px solid #75daf4;outline-offset:3px}
+.footer-social-btn span:last-child{font-size:1.05rem;color:#75d9ec}
+@media(max-width:560px){.footer-social-buttons{width:min(100%,280px)}}
